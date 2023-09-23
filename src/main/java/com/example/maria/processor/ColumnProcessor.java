@@ -2,8 +2,8 @@ package com.example.maria.processor;
 
 public interface ColumnProcessor {
 
-    boolean isMatch(String fieldId, Object column);
+    boolean isMatch(String fieldId);
 
-    String getKey(String fieldId, Object column);
+    String getValue(String fieldId, RowContext rowContext);
 
 }
